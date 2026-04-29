@@ -1,5 +1,29 @@
+body {
+  text-align: center;
+  font-family: "Martian Mono", monospace;
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+#title {
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: -50px;
+}
+
 #movie-result {
-  background: rgb(244, 98, 181);
+  background: rgba(252, 218, 0);
   border: 5px solid black;
   font-size: 24px;
   min-height: 160px;
@@ -8,7 +32,7 @@
 }
 
 #book-result {
-  background: rgb(196, 159, 255);
+  background: rgba(252, 218, 0);
   border: 5px solid black;
   font-size: 24px;
   min-height: 160px;
