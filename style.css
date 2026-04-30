@@ -3,6 +3,7 @@ body {
   font-family: "Martian Mono", monospace;
   color: rgb(255, 255, 255);
   background-color: black;
+  margin-bottom: 25px;
 }
 
 h1 {
@@ -20,6 +21,11 @@ h2 {
   display: flex;
   align-items: center;
   margin: -50px;
+}
+
+#title img{
+  margin-left: -150px;
+  margin-right: -150px;
 }
 
 #movie-result {
@@ -40,7 +46,24 @@ h2 {
   margin-bottom: 20px;
 }
 
+.characterimg {
+  border: 10px;
+  border-color: rgba(252, 218, 0);
+}
+
 hr {
   height: 5px;
   background-color: black;
+}
+
+form {
+  margin: 25px;
+}
+
+button {
+  background-color: rgba(252, 218, 0);
+}
+
+select {
+  background-color: rgb(255, 255, 255);
 }
