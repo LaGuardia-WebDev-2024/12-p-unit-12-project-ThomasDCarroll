@@ -1,12 +1,12 @@
 <!-- Unit 12 Project
 Requirements
-[  ] Two Interactive Drop-down Inputs 
+[ x ] Two Interactive Drop-down Inputs 
 [  ] Standard Animation
 [  ] Custom Animation
-[  ] Include Three Images
+[ x ] Include Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Google Font
+[ yes ] Feature 1 - Google Font
 [ no ] Feature 2 - Chain jQuery Methods
 [ no ] Feature 3 - .mouseover() & .mouseOut() Methods
 [ no ] Feature 4 - :hover Feature 
@@ -27,9 +27,9 @@ Select ONE Additional Feature to Add
   <body>
     <div id="title">
         <h1 id="quizabout">Quiz About</h1>
-        <img src="WB_CollectionLogo_ThePitt-mobile.webp" height="400" id="logo">
+        <img src="WB_CollectionLogo_ThePitt-mobile.webp" height="300" id="logo">
     </div>
-    <h2>(This show is taking over my life omg)</h2>
+    <h2>(This show is taking over my life wow)</h2>
     <hr />
 
     <!-- Movie Question -->
@@ -52,27 +52,117 @@ Select ONE Additional Feature to Add
     <hr />
 
     <!-- Dana Question -->
-    <form id="robby-form">
+    <form id="dana-form">
       <label>
         What is this character's name? (Right)
-        <select id="robby-answer">
-          <option value="robby1">Miranda</option>
-          <option value="robby2">Darlene</option>
-          <option value="robby3">Dana</option>
-          <option value="robby4">Elizabeth</option>
+        <select id="dana-answer">
+          <option value="dana1">Miranda</option>
+          <option value="dana2">Alyssa</option>
+          <option value="dana3">Dana</option>
+          <option value="dana4">Elizabeth</option>
         </select>
       </label>
       <button type="submit">Check Answer</button>
     </form>
       <img src="07 - DANA EVANS.avif" width="500px" class="characterimg">
-    <div id="robby-result">
-      <p id="robby-text"></p>
+    <div id="dana-result">
+      <p id="dana-text"></p>
     </div>
+    <hr />
+
+    <!-- Whitaker Question -->
+    <form id="whitaker-form">
+      <label>
+        What is this character's name?
+        <select id="whitaker-answer">
+          <option value="whitaker1">Dennis</option>
+          <option value="whitaker2">Mike</option>
+          <option value="whitaker3">Jonah</option>
+          <option value="whitaker4">Levi</option>
+        </select>
+      </label>
+      <button type="submit">Check Answer</button>
+    </form>
+      <img src="09 - DENNIS WHITAKER.avif" width="500px" class="characterimg">
+    <div id="whitaker-result">
+      <p id="whitaker-text"></p>
+    </div>
+    <hr />
+
+    <!-- Santos Question -->
+    <form id="santos-form">
+      <label>
+        What is this character's name?
+        <select id="santos-answer">
+          <option value="santos1">Trinity</option>
+          <option value="santos2">Amanda</option>
+          <option value="santos3">Cassidy</option>
+          <option value="santos4">Penny</option>
+        </select>
+      </label>
+      <button type="submit">Check Answer</button>
+    </form>
+      <img src="05 - DR. SANTOS.avif" width="500px" class="characterimg">
+    <div id="santos-result">
+      <p id="santos-text"></p>
+    </div>
+    <hr />
+
+    <!-- McKay Question -->
+    <form id="mckay-form">
+      <label>
+        What is this character's name?
+        <select id="mckay-answer">
+          <option value="mckay1">Robyn</option>
+          <option value="mckay2">Dakota</option>
+          <option value="mckay3">Gwen</option>
+          <option value="mckay4">Cassie</option>
+        </select>
+      </label>
+      <button type="submit">Check Answer</button>
+    </form>
+      <img src="03 - DR. MCKAY.avif" width="500px" class="characterimg">
+    <div id="mckay-result">
+      <p id="mckay-text"></p>
+    </div>
+    <hr />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       
-      //========================Movie Question jQuery Code
+      //========================Robby Question jQuery Code
+      $("#robby-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var $answer = $("#robby-answer");
+        var answer = $answer.val();
+
+        if (answer === "robby2") {
+          $robby-text.fadeIn();
+          $("#robby-text").text("Yes!");
+          $("")
+        } 
+        else {
+          $("#robby-text").text("Nuh Uh");
+        }
+      });
+
+      //=======================Dana Question jQuery Code
+      $("#book-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var $answer = $("#book-answer");
+        var answer = $answer.val();
+
+        if (answer === "book1") {
+          $("#book-text").text("YESSSS!");
+        } 
+        else {
+          $("#book-text").text("Try Again!");
+        }
+      });
+
+      //========================Whitaker Question jQuery Code
       $("#movie-form").on("submit", function (event) {
         event.preventDefault();
 
@@ -87,7 +177,7 @@ Select ONE Additional Feature to Add
         }
       });
 
-      //=======================Book Question jQuery Code
+      //=======================Santos Question jQuery Code
       $("#book-form").on("submit", function (event) {
         event.preventDefault();
 
@@ -99,6 +189,21 @@ Select ONE Additional Feature to Add
         } 
         else {
           $("#book-text").text("Try Again!");
+        }
+      });
+
+      //=======================McKay Question jQuery Code
+      $("#book-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var $answer = $("#mckay-answer");
+        var answer = $answer.val();
+
+        if (answer === "mckay4") {
+          $("#mckay-text").text("YESSSS!");
+        } 
+        else {
+          $("#mckay-text").text("Try Again!");
         }
       });
       

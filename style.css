@@ -24,8 +24,8 @@ h2 {
 }
 
 #title img{
-  margin-left: -150px;
-  margin-right: -150px;
+  margin-left: -125px;
+  margin-right: -125px;
 }
 
 #movie-result {
@@ -47,8 +47,7 @@ h2 {
 }
 
 .characterimg {
-  border: 10px;
-  border-color: rgba(252, 218, 0);
+  border: 5px solid rgba(252, 218, 0);
 }
 
 hr {
