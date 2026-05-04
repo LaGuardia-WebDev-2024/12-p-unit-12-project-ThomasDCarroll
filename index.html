@@ -148,17 +148,17 @@ Select ONE Additional Feature to Add
       });
 
       //=======================Dana Question jQuery Code
-      $("#book-form").on("submit", function (event) {
+      $("#dana-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#book-answer");
+        var $answer = $("#dana-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-text").text("YESSSS!");
+        if (answer === "dana3") {
+          $("#dana-text").text("Yes!");
         } 
         else {
-          $("#book-text").text("Try Again!");
+          $("#dana-text").text("Nuh Uh");
         }
       });
 
