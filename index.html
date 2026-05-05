@@ -138,7 +138,6 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "robby2") {
-          $robby-text.fadeIn();
           $("#robby-text").text("Yes!");
           $("")
         } 
@@ -163,47 +162,47 @@ Select ONE Additional Feature to Add
       });
 
       //========================Whitaker Question jQuery Code
-      $("#movie-form").on("submit", function (event) {
+      $("#whitaker-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#movie-answer");
+        var $answer = $("#whitaker-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
-          $("#movie-text").text("YESSSS!");
+        if (answer === "whitaker1") {
+          $("#whitaker-text").text("Yes!");
         } 
         else {
-          $("#movie-text").text("Try Again!");
+          $("#whitaker-text").text("Nuh Uh");
         }
       });
 
       //=======================Santos Question jQuery Code
-      $("#book-form").on("submit", function (event) {
+      $("#santos-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#book-answer");
+        var $answer = $("#santos-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-text").text("YESSSS!");
+        if (answer === "santos1") {
+          $("#santos-text").text("Yes!");
         } 
         else {
-          $("#book-text").text("Try Again!");
+          $("#santos-text").text("Nuh Uh");
         }
       });
 
       //=======================McKay Question jQuery Code
-      $("#book-form").on("submit", function (event) {
+      $("#mckay-form").on("submit", function (event) {
         event.preventDefault();
 
         var $answer = $("#mckay-answer");
         var answer = $answer.val();
 
         if (answer === "mckay4") {
-          $("#mckay-text").text("YESSSS!");
+          $("#mckay-text").text("Yes!");
         } 
         else {
-          $("#mckay-text").text("Try Again!");
+          $("#mckay-text").text("Nuh Uh");
         }
       });
       
